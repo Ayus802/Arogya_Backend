@@ -54,7 +54,7 @@ router.post('/', async(req, res)=>{
 })
 
 router.get('/logout',(req,res)=>{
-    res.clearCookie(' token');
+    res.clearCookie('token');
     res.json({
         message: 'You are Logged out'
     })
